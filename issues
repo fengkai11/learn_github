@@ -1,0 +1,12 @@
+1. fatal : the remote origin already exists ?
+
+#delete the remote git repository the add the remote repository
+
+git remote rm origin
+
+2. error: failed to push some refs to 'git@github.com:....." 
+Updates were rejected because the remote contains work that you do not have locally. 
+This is usually caused by another repository pushing to
+
+git pull origin master
+git push -u origin master
