@@ -1,0 +1,60 @@
+##config github
+
+
+git config --global user.name "your name"
+git config  --globa user.email "your email address"\
+
+#check the config information
+
+git config --list
+
+#edit the config information
+
+nano ~/.gitconfig
+
+#create the key
+
+ssh-keygen -C 'you email address@gmail.com' -t rsa   
+#post the key
+#test the key
+ssh -v git@github.com
+
+.....
+Exit status 1
+
+##using  git
+
+#create the repository in the local
+
+mkdir -p ~/git/test
+touch readme
+
+#initialize the directory
+
+git init
+
+#add new file
+
+git add .
+
+#push all file
+
+git commit -m "Initial Commit" -a
+
+#push a file
+
+git commit -m "Initial Commit" filename
+
+#push the remote git repository
+
+git remote add origin ssh://git@git.domain.tld/repository.git 
+
+#check it
+
+git remote -v
+
+#push to remote
+
+git push origin master
+
+
